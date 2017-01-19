@@ -67,13 +67,7 @@ html {
 
 /* Stegosaurus */
 
-.polaroid:nth-child(3) {
-  position: absolute;
-  left: 40%;
-  top: 100px;
-  transform: rotate(30deg);
-  z-index: 2;
-}
+.
 
 .polaroid:nth-child(3) > figcaption {
   position: absolute;
