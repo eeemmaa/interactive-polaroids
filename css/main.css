@@ -12,6 +12,7 @@ html {
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);
+  transition: all 150ms linear;
 }
 
 .polaroid > img {
@@ -24,46 +25,66 @@ html {
   text-shadow: 1px 1px 3px #000;
 }
 
-/*Hadrosaur*/
+/* Hadrosaur */
 
-figure:nth-child(1) {
+.polaroid:nth-child(1) {
   position: absolute;
-  left: 20%;
+  left: 16%;
   top: 100px;
-  transform: rotate(-15deg);
+  transform: rotate(-20deg);
+  z-index: 1;
 }
 
-figure:nth-child(1) > figcaption {
+.polaroid:nth-child(1) > figcaption {
   position: absolute;
   bottom: 1em;
   left: 5em;
 }
 
-/*Pteranodon*/
+.polaroid:nth-child(1):hover {
+  z-index: 100;
+}
 
-figure:nth-child(2) {
+/* Pteranodon */
+
+.polaroid:nth-child(2) {
   position: absolute;
   left: 20%;
   top: 150px;
+  transform: rotate(10deg);
+  z-index: 3;
 }
 
-figure:nth-child(2) > figcaption {
+.polaroid:nth-child(2) > figcaption {
   position: absolute;
   bottom: 1em;
   left: 5em;
 }
 
-/*Stegosaurus*/
+.polaroid:nth-child(2):hover {
+  z-index: 100;
+}
 
-figure:nth-child(3) {
+/* Stegosaurus */
+
+.polaroid:nth-child(3) {
   position: absolute;
   left: 30%;
   top: 100px;
   transform: rotate(30deg);
+  z-index: 2;
 }
 
-figure:nth-child(3) > figcaption {
+.polaroid:nth-child(3) > figcaption {
   position: absolute;
   bottom: 1em;
   left: 5em;
+}
+
+.polaroid:nth-child(3):hover {
+  z-index: 100;
+}
+
+.polaroid:hover {
+  transform: rotate(0deg);
 }
