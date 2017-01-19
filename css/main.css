@@ -24,8 +24,13 @@ html {
   text-shadow: 1px 1px 3px #000;
 }
 
+/*Hadrosaur*/
+
 figure:nth-child(1) {
-  position: relative;
+  position: absolute;
+  left: 20%;
+  top: 100px;
+  transform: rotate(-15deg);
 }
 
 figure:nth-child(1) > figcaption {
@@ -34,8 +39,12 @@ figure:nth-child(1) > figcaption {
   left: 5em;
 }
 
+/*Pteranodon*/
+
 figure:nth-child(2) {
-  position: relative;
+  position: absolute;
+  left: 20%;
+  top: 150px;
 }
 
 figure:nth-child(2) > figcaption {
@@ -44,8 +53,13 @@ figure:nth-child(2) > figcaption {
   left: 5em;
 }
 
+/*Stegosaurus*/
+
 figure:nth-child(3) {
-  position: relative;
+  position: absolute;
+  left: 30%;
+  top: 100px;
+  transform: rotate(30deg);
 }
 
 figure:nth-child(3) > figcaption {
